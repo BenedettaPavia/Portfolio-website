@@ -1,0 +1,328 @@
+.education-skills-wrapper {
+  background:url("../img/background-skills&tools.svg") no-repeat center center/cover;
+  padding-bottom: 5rem;
+}
+
+.my-education {
+  padding: 5rem 1rem;
+  text-align: center;
+
+  .section-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: $secondary-color;
+    margin-bottom: 3rem;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: nowrap; // ✅ Permette il corretto posizionamento delle card
+    justify-content: space-around; // ✅ Centra le card orizzontalmente
+    gap: 0.5rem; // ✅ Spazio uniforme tra le card
+  }
+
+  .education-card {
+    background-color: $bg-light;
+    border: 3px solid $secondary-color;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    width: 95%; // 🔥 Adesso sono più larghe
+    min-height: 300px; // 🔥 Altezza ridotta per evitare che sembrino "colonne verticali"
+    max-height: 400px; // 🔥 Limite massimo all'altezza
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    h3 {
+      font-size: 1.6rem;
+      color: $primary-color;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    .education-date {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: $text-dark;
+    }
+
+    .education-school {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: $secondary-color;
+    }
+
+    .education-info {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      color: $text-dark;
+    }
+
+    .education-grade {
+      font-size: 1rem;
+      font-weight: bold;
+      color: $primary-color;
+    }
+  }
+}
+
+.skills-tools {
+  padding: 3rem 1rem;
+  text-align: center;
+
+  .section-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: $secondary-color;
+    margin-bottom: 1.8rem;
+  }
+
+  .section-subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $text-dark;
+    margin-bottom: 3rem;
+  }
+
+  // 🔹 SKILLS (Pill buttons)
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+
+    .skill-pill {
+      background: $bg-light;
+      color:$text-dark ;
+      padding: 0.8rem 1.5rem;
+      border:2px solid #f5f991;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      
+      &:hover {
+        background: $primary-color;
+        transform: scale(1.1);
+        color:#f5f991;
+      }
+    }
+  }
+
+  // 🔹 TOOLS (Bubble icons)
+  .tools-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+
+    .tool-icon {
+      width: 80px;
+      height: 80px;
+      background: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: default;
+
+      img {
+        width: 70%;
+        height: auto;
+      }
+    }
+  }
+}
+
+.cta-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: center!important;
+  gap: 1rem!important; // 🔥 Distanza tra frecce e pulsante
+  margin-top: 2rem;
+  position:relative;
+
+
+  .btn-cta {
+      padding: 0.8rem 1.5rem!important;
+      border-radius: 15px;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-family: $font-primary;
+      text-decoration: none;
+      transition: background 0.3s ease, color 0.3s ease;
+      background: #f5f991;
+      color: $text-dark;
+      border: none;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+
+    &:hover {
+      background: $hover-color;
+      color: #f5f991;
+    }
+  }
+
+  .arrow {
+    width: 200px; // 🔥 Dimensione delle frecce
+    height: auto;
+    transition: transform 0.3s ease;
+
+    &.arrow-left {
+      animation: bounce-left 1.5s infinite alternate;
+    }
+
+    &.arrow-right {
+      animation: bounce-right 1.5s infinite alternate;
+    }
+  }
+
+  @keyframes bounce-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-10px); }
+  }
+
+  @keyframes bounce-right {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(10px); }
+  }
+}
+
+.my-projects {
+  background-color: $bg-light;
+  padding: 5rem 1rem;
+  text-align: center;
+
+  .section-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: $primary-color;
+    margin-bottom: 1rem;
+  }
+
+  .section-subtitle {
+    font-size: 1.5rem;
+    color: $text-dark;
+    margin-bottom: 3rem;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .project-card {
+    background-color: $bg-light;
+    border: 2px solid $primary-color;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    width: 100%;
+    max-width: 500px;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .project-info {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      text-align: left;
+    }
+
+    .project-title {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: $primary-color;
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $hover-color;
+      }
+    }
+
+    .project-category {
+      color:$secondary-color;
+      font-size: 0.9rem;
+      font-weight: bold;
+      padding: 0.3rem 1rem;
+      border: 2px solid $secondary-color;
+      border-radius: 10px;
+      letter-spacing: 0.5px;
+      max-width: 160px;
+    }
+
+    .project-description {
+      font-size: 1rem;
+      color: $text-dark;
+      line-height: 1.4;
+      max-width: 340px;
+      text-align: left;
+    }
+  }
+}
+
+.cta-section {
+  background: url("../img/background-skills&tools.svg") no-repeat center center/cover;
+  padding: 5rem 1rem;
+  text-align: center;
+
+  .cta-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: $secondary-color;
+    margin-bottom: 1rem;
+  }
+
+  .cta-text {
+    font-size: 1.5rem;
+    color: $text-dark;
+    margin-bottom: 2.2rem;
+  }
+
+  .btn-primary {
+    padding: 1.2rem 2.2rem;
+      border-radius: 15px;
+      font-weight: bold;
+      font-size:large;
+      text-transform: uppercase;
+      font-family: $font-primary;
+      text-decoration: none;
+      transition: background 0.3s ease, color 0.3s ease;
+      background: #f5f991;
+      color: $text-dark;
+      border: none;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+
+    &:hover {
+      background: $hover-color;
+      color: #f5f991;
+    }
+  }
+}
+
+
+
+
+

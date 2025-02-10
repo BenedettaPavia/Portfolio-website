@@ -1,0 +1,225 @@
+// ✅ Nascondere link navbar su mobile e tablet
+@media (max-width: 991px) {
+  .navbar-nav {
+    display: none !important;
+  }
+  .menu-toggle {
+    display: block !important;
+  }
+}
+
+// ✅ Hero Section Responsive
+@media (max-width: 991px) {
+  .hero {
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    h1 { font-size: 3.8rem; }
+    h2 { font-size: 2.5rem; }
+    p { font-size: 1.5rem; }
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 100vh;
+    h1 { font-size: 3.5rem; }
+    h2 { font-size: 1.8rem; margin-bottom: 1rem; }
+    p { font-size: 1.2rem; }
+    .button-group {
+      flex-direction: column;
+      gap: 0.8rem;
+      .btn { width: 100%; max-width: 250px; margin: 0 auto; }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    h1 { font-size: 3rem; }
+    h2 { font-size: 1.3rem; }
+    p { font-size: 1rem; }
+  }
+}
+
+// ✅ About Me Responsive
+@media (max-width: 768px) {
+  .row { flex-direction: row!important; align-items: center!important; }
+  .about-photo .photo-wrapper { max-width: 400px !important; }
+  .section-title { font-size: 2.8rem !important; }
+  .bubbles-container {
+    justify-content: center;
+    gap: 0.5rem !important;
+    .bubble {
+      width: 80px!important;
+      height: 80px!important;
+      font-size: 1.2rem!important;
+    }
+    .bubble.active {
+      width: 95%!important;
+      min-height: 140px!important;
+      max-height: 400px!important;
+      .bubble-text { font-size: 1rem !important; }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .row { flex-direction: column!important; text-align: center!important; }
+  .about-photo .photo-wrapper { max-width: 300px!important; }
+  .bubbles-container {
+    flex-wrap: nowrap!important;
+    .bubble {
+      width: 70px!important;
+      height: 70px!important;
+      font-size: 1rem!important;
+    }
+    .bubble.active {
+      width: 95%!important;
+      min-height: 140px!important;
+      max-height: 300px!important;
+    }
+  }
+}
+
+// ✅ My Education Responsive
+@media (max-width: 992px) {
+  .my-education .row {
+    flex-wrap: wrap!important;
+    justify-content: center!important;
+    gap: 2rem!important;
+  }
+  .education-card {
+    width: 95%!important;
+    max-width: 700px!important;
+    min-height: 250px!important;
+    text-align: center!important;
+  }
+}
+
+@media (max-width: 768px) {
+  .my-education .row {
+    flex-direction: column!important;
+    align-items: center!important;
+    gap: 1.5rem!important;
+  }
+  .education-card {
+    width: 90%!important;
+    max-width: 400px!important;
+    min-height: 250px!important;
+    text-align: center!important;
+    margin: auto!important;
+  }
+}
+
+// ✅ Skills & Tools Responsive Fix
+@media (max-width: 992px) {
+  .skills-tools {
+    padding: 4rem 1rem;
+    background-size: 500vh!important;
+  }
+  .skills-list {
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-bottom: 3rem!important;
+  }
+  .tools-container {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .tool-icon {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-tools {
+    padding: 3rem 1rem;
+    background-size: 465vh!important;
+  }
+  .skills-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 5rem !important;
+  }
+  .tools-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
+  }
+  .tool-icon {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .btn-cta{
+    text-align: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .education-skills-wrapper {
+    background-size: cover !important;
+    background-position: center !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .education-skills-wrapper {
+    background-size: cover !important;
+    background-position: center !important;
+  }
+}
+
+// ✅ Responsive Design
+@media (max-width: 992px) {
+  .my-projects .row {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .project-card {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .my-projects .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 95%;
+    max-width: 400px;
+  }
+}
+
+// ✅ Responsive Fix
+@media (max-width: 768px) {
+  .cta-section {
+    padding: 3rem 1rem;
+    background-size: cover !important; // 🔥 Mantiene il background proporzionato
+  }
+
+  .cta-title {
+    font-size: 2.2rem;
+  }
+
+  .cta-text {
+    font-size: 1.3rem;
+  }
+
+  .btn-primary {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem !important;
+    width: 100%; 
+    max-width: 250px!important; 
+    margin: 0 auto; 
+  }
+}
+

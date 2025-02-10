@@ -1,0 +1,114 @@
+.cv-page {
+    background-color: $bg-light;
+    padding: 5rem 2rem;
+  
+    .cv-hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: url("../img/background-hero.svg") no-repeat center center/cover;
+  
+      h1 {
+        font-size: 3rem;
+        color: $primary-color;
+        font-weight: bold;
+      }
+  
+      h2 {
+        font-size: 1.8rem;
+        color: $text-dark;
+      }
+    }
+  
+    .cv-section {
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 2px solid $secondary-color;
+  
+      h2 {
+        font-size: 2rem;
+        color: $primary-color;
+        margin-bottom: 1rem;
+      }
+  
+      .cv-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+      }
+  
+      .cv-card {
+        background-color: $bg-light;
+        border: 3px solid $secondary-color;
+        padding: 1.5rem;
+        border-radius: 15px;
+        text-align: center;
+        width: 300px;
+        min-height: 150px;
+        transition: transform 0.3s ease;
+  
+        &:hover {
+          transform: translateY(-5px);
+        }
+  
+        h3 {
+          font-size: 1.4rem;
+          color: $primary-color;
+        }
+  
+        .cv-date {
+          font-size: 1rem;
+          font-weight: bold;
+          color: $text-dark;
+        }
+      }
+    }
+  
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+  
+      .skill-pill {
+        background: $secondary-color;
+        color: $bg-light;
+        padding: 0.8rem 1.5rem;
+        border-radius: 50px;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+    }
+  
+    .download-cv {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 3rem;
+  
+      .btn-cv {
+        background: $secondary-color;
+        color: $bg-light;
+        padding: 1rem 2rem;
+        font-size: 1.3rem;
+        border-radius: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        transition: background 0.3s ease;
+  
+        &:hover {
+          background: $primary-color;
+        }
+  
+        img {
+          width: 25px;
+          height: auto;
+        }
+      }
+    }
+  }
+  

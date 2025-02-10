@@ -1,0 +1,110 @@
+.about-me {
+  background-color: $bg-light;
+  padding: 4rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .row {
+    gap: 5rem; 
+  }
+
+  // ✅ Sezione Foto a sinistra con bordo
+  .about-photo {
+    display: flex;
+    justify-content: center;
+
+    .photo-wrapper {
+      width: 100%;
+      max-width: 350px;
+      border: 10px solid $bg-light; // 🔥 Bordo interno colore background
+      outline: 2px solid $secondary-color; // 🔥 Contorno esterno sottile
+      border-radius: 15px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+      }
+    }
+  }
+
+  // ✅ Sezione Testo a Destra
+  .about-content {
+    text-align: left;
+
+    .section-title {
+      font-size: 4rem; // 🔥 Un po' più piccolo per migliorare il design
+      font-weight: bold;
+      margin-bottom: 1rem;
+      color: $primary-color;
+    }
+
+    .about-subtitle {
+      font-size: 1.5rem;
+      margin-bottom: 3rem;
+      color:$secondary-color;
+    }
+  }
+
+  // ✅ Bubbles in Row
+  .bubbles-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    .bubble {
+      width: 100px;
+      height: 100px;
+      background-color: $secondary-color;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 1.5rem;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+
+      .bubble-icon {
+        width: 50%;
+        height: auto;
+      }
+
+      .bubble-text {
+        display: none;
+        position: absolute;
+        width: 200px;
+        text-align: center;
+        font-size: 1.2rem;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      &.active {
+        width: 250px;
+        height: 250px;
+        border-radius: 20px;
+        background-color: $primary-color;
+        display: flex;
+        justify-content: center;
+
+        .bubble-icon {
+          display: none;
+        }
+
+        .bubble-text {
+          display: block;
+          color: #f5f991;
+        }
+      }
+    }
+  }
+}
+  
