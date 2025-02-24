@@ -15,8 +15,8 @@
   }
   
   body, .container {
-    overflow: visible;
     font-family: $font-primary;
+      overflow: visible!important;
   }
 
   html {
