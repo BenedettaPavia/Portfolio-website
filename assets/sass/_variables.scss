@@ -1,11 +1,11 @@
-//  Palette pastello illustrata
+//  Palette 
 $primary-color: #E05C30;
 $secondary-color: #44769a;
 $bg-light: #fffdf9;
 $text-dark: #403D39;
 $hover-color: #44769a;
 
-// Font (Solo Poppins)
+// Font 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 $font-primary: "Poppins", sans-serif;
@@ -19,6 +19,6 @@ $spacing-large: 2rem;
 $icon-size: 40px;
 $icon-hover-scale: 1.1;
 
-// Modale
+//Modale
 $modal-width: 75%;
 $modal-transition: all 0.3s ease-in-out;

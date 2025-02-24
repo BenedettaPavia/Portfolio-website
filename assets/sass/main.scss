@@ -3,8 +3,9 @@
 @import "hero";
 @import "about";
 @import "Home";
-@import "footer";
 @import "cv";
+@import "contacts";
+@import "footer";
 @import "responsive";
 
 * {
@@ -24,18 +25,18 @@
 
   @font-face {
     font-family: "Poppins";
-    src: url("assets/fonts/Poppins-Regular.woff2") format("woff2"),
-         url("assets/fonts/Poppins-Regular.woff") format("woff"),
-         url("assets/fonts/Poppins-Regular.ttf") format("truetype");
+    src: url("/Portfolio-website/assets/fonts/Poppins-Regular.woff2") format("woff2"),
+         url("/Portfolio-website/assets/fonts/Poppins-Regular.woff") format("woff"),
+         url("/Portfolio-website/assets/fonts/Poppins-Regular.ttf") format("truetype");
     font-weight: 400; 
     font-style: normal;
   }
   
   @font-face {
     font-family: "Poppins";
-    src: url("assets/fonts/Poppins-SemiBold.woff2") format("woff2"),
-         url("assets/fonts/Poppins-SemiBold.woff") format("woff"),
-         url("assets/fonts/Poppins-SemiBold.ttf") format("truetype");
+    src: url("/Portfolio-website/assets/fonts/Poppins-SemiBold.woff2") format("woff2"),
+         url("/Portfolio-website/assets/fonts/Poppins-SemiBold.woff") format("woff"),
+         url("/Portfolio-website/assets/fonts/Poppins-SemiBold.ttf") format("truetype");
     font-weight: 600; 
     font-style: normal;
   }

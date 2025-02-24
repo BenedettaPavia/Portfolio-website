@@ -9,7 +9,6 @@
     gap: 5rem; 
   }
 
-  // ✅ Sezione Foto a sinistra con bordo
   .about-photo {
     display: flex;
     justify-content: center;
@@ -17,8 +16,8 @@
     .photo-wrapper {
       width: 100%;
       max-width: 350px;
-      border: 10px solid $bg-light; // 🔥 Bordo interno colore background
-      outline: 2px solid $secondary-color; // 🔥 Contorno esterno sottile
+      border: 10px solid $bg-light; 
+      outline: 2px solid $secondary-color; 
       border-radius: 15px;
       overflow: hidden;
 
@@ -30,12 +29,11 @@
     }
   }
 
-  // ✅ Sezione Testo a Destra
   .about-content {
     text-align: left;
 
     .section-title {
-      font-size: 4rem; // 🔥 Un po' più piccolo per migliorare il design
+      font-size: 4rem; 
       font-weight: bold;
       margin-bottom: 1rem;
       color: $primary-color;
@@ -48,7 +46,6 @@
     }
   }
 
-  // ✅ Bubbles in Row
   .bubbles-container {
     display: flex;
     justify-content: space-between;

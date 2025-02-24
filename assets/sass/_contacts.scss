@@ -1,0 +1,116 @@
+.contact-page {
+    background:url("../img/background-contacts-page.svg") no-repeat center center/cover;
+    padding: 5rem 2rem;
+    min-height: 100vh;
+    text-align: center;
+  
+    .section-title {
+      font-size: 3rem;
+      font-weight: bold;
+      color: $primary-color;
+      margin-bottom: 1rem;
+    }
+  
+    .section-subtitle {
+      font-size: 1.2rem;
+      color: $text-dark;
+      margin-bottom: 3rem;
+    }
+  
+    .contact-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 3rem;
+      max-width: 1000px;
+      margin: auto;
+  
+      .contact-form {
+        flex: 1;
+        background: $bg-light;
+        padding: 2rem;
+        border-radius: 15px;
+        border: 3px solid $secondary-color;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+        label {
+          display: block;
+          font-weight: bold;
+          margin-top: 1rem;
+          text-align: left;
+        }
+  
+        input, textarea {
+          width: 100%;
+          padding: 0.8rem;
+          margin-top: 0.5rem;
+          border: 2px solid $secondary-color;
+          border-radius: 10px;
+          font-size: 1rem;
+          transition: all 0.3s ease;
+  
+          &:focus {
+            border-color: $primary-color;
+            outline: none;
+            box-shadow: 0 0 8px rgba($primary-color, 0.3);
+          }
+        }
+  
+        .btn {
+          padding: 0.8rem 1.5rem;
+          border-radius: 15px;
+          font-weight: bold;
+          text-transform: uppercase;
+          font-family: $font-primary;
+          text-decoration: none;
+          transition: background 0.3s ease, color 0.3s ease;
+          margin-top: 1rem;
+        }
+    
+        .btn-primary {
+          background: #f5f991;
+          color: $text-dark;
+          border: none;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    
+          &:hover {
+            background: $hover-color;
+            color: #f5f991;
+          }
+        }
+      }
+  
+      .contact-info {
+        flex: 1;
+        text-align: center;
+  
+        h3 {
+          color: $secondary-color;
+          font-size: 2rem;
+          font-weight: 600;
+          margin-bottom: 1rem;
+        }
+  
+        .contact-socials {
+          display: flex;
+          justify-content: center;
+          gap: 1rem;
+          margin-top: 1rem;
+  
+          a {
+            display: inline-block;
+  
+            img {
+              width: 50px;
+              transition: transform 0.3s ease, opacity 0.3s ease;
+  
+              &:hover {
+                transform: scale(1.2);
+                opacity: 0.8;
+              }
+            }
+          }
+        }
+      }
+  }
+}
