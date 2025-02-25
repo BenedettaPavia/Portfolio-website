@@ -83,7 +83,7 @@
 
 @media (max-width: 400px) { 
   .bubbles-container {
-    flex-wrap: wrap!important;
+    flex-wrap: nowrap!important;
     .bubble {
       width: 50px!important;
       height: 50px!important;
@@ -92,7 +92,7 @@
     .bubble.active {
       width: 300px!important;
       min-height: 150px!important;
-      max-height: 250px!important;
+      max-height: 350px!important;
     }
   }
 }
