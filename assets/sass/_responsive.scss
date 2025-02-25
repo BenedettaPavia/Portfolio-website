@@ -468,3 +468,14 @@
   }
 }
 
+@media (max-width: 400px) {
+  .education-skills-wrapper {
+    background:url("../img/background-skills&toolsmobile.svg") no-repeat center center/contain;
+  } 
+}
+
+@media (max-width: 400px) {
+.cv-page {
+  background:url("../img/background-skills&toolsmobile.svg") no-repeat center center/cover;
+}
+}
