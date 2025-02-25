@@ -56,7 +56,9 @@
       width: 95%!important;
       min-height: 140px!important;
       max-height: 400px!important;
-      .bubble-text { font-size: 1rem !important; }
+      .bubble-text { 
+      font-size: 0.9rem;
+      max-width: fit-content; }
     }
   }
 }
@@ -75,6 +77,22 @@
       width: 95%!important;
       min-height: 140px!important;
       max-height: 300px!important;
+    }
+  }
+}
+
+@media (max-width: 400px) { 
+  .bubbles-container {
+    flex-wrap: wrap!important;
+    .bubble {
+      width: 50px!important;
+      height: 50px!important;
+      font-size: 1rem!important;
+    }
+    .bubble.active {
+      width: 300px!important;
+      min-height: 150px!important;
+      max-height: 250px!important;
     }
   }
 }
@@ -449,3 +467,4 @@
     margin-top: 1rem;
   }
 }
+
