@@ -59,4 +59,37 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  document.addEventListener("DOMContentLoaded", function () {
+    emailjs.init("LldQq6pM-5eY9XKXo"); // <-- SE è il public key metti quello giusto
   
+    const form = document.getElementById("contact-form");
+    const messageBox = document.getElementById("form-message");
+  
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+  
+      emailjs.sendForm("service_qneoirq", "template_rv64bth", this)
+        .then(function () {
+          messageBox.textContent = "Messaggio inviato con successo!";
+          messageBox.className = "form-message success";
+          messageBox.style.display = "block";
+  
+          // Nascondi il messaggio dopo 5 secondi
+          setTimeout(() => {
+            messageBox.style.display = "none";
+          }, 5000);
+  
+          form.reset();
+        }, function (error) {
+          messageBox.textContent = "Errore durante l'invio. Riprova.";
+          messageBox.className = "form-message error";
+          messageBox.style.display = "block";
+  
+          setTimeout(() => {
+            messageBox.style.display = "none";
+          }, 5000);
+        });
+    });
+  });
+  
+
